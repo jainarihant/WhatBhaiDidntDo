@@ -3,5 +3,13 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <h1>
+    <ng-template #sharingButtons>
+      <a href="#" class="fa fa-facebook">fb</a>
+    </ng-template>
+    <button type="button" class="btn btn-outline-secondary mr-2" placement="bottom" [ngbPopover]="sharingButtons" popoverTitle="Share">
+      Share
+    </button>
+  </h1>
 </div>
 <router-outlet></router-outlet>
