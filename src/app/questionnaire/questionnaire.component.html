@@ -1,0 +1,10 @@
+<div>
+  <form (ngSubmit)="onFormSubmit()" [formGroup]="ageForm">
+    <input class="form-horizontal" id="age-selection" autocomplete="off" spellcheck="false" type="number" [formControl]="ageForm.controls['age']" [(ngModel)]="age"
+      formControlName="age" ngDefaultControl>
+      <button type="submit">Go!</button>
+  </form>
+  <div>
+    <h2>{{ age }}</h2>
+  </div>
+</div>

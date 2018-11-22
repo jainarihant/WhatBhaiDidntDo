@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionnaireComponent } from '../questionnaire/questionnaire.component';
 
 @Component({
   selector: 'app-home',
